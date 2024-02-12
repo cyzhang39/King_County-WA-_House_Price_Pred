@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>King County House Price Pred</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../static/index.js"></script>
+        <link rel="stylesheet" href="../static/index.css">
+    </head>
+    <body>
+        <form class="info">
+            <fieldset>
+                <legend>General</legend>
+                <label for="zip">Zipcode:</label>
+                <input type="number" id="zipcode" list="ziplist" value="98001" required>
+                <datalist id="ziplist">
+                    <option value="98001">
+                    <option value="98002">
+                    <option value="98003">
+                    <option value="98004">
+                    <option value="98005">
+                    <option value="98006">
+                    <option value="98007">
+                    <option value="98008">
+                    <option value="98010">
+                    <option value="98011">
+                    <option value="98014">
+                    <option value="98019">
+                    <option value="98022">
+                    <option value="98023">
+                    <option value="98024">
+                    <option value="98027">
+                    <option value="98028">
+                    <option value="98029">
+                    <option value="98030">
+                    <option value="98031">
+                    <option value="98032">
+                    <option value="98033">
+                    <option value="98034">
+                    <option value="98038">
+                    <option value="98039">
+                    <option value="98040">
+                    <option value="98042">
+                    <option value="98045">
+                    <option value="98052">
+                    <option value="98053">
+                    <option value="98055">
+                    <option value="98056">
+                    <option value="98058">
+                    <option value="98059">
+                    <option value="98065">
+                    <option value="98070">
+                    <option value="98072">
+                    <option value="98074">
+                    <option value="98075">
+                    <option value="98077">
+                    <option value="98092">
+                    <option value="98102">
+                    <option value="98103">
+                    <option value="98105">
+                    <option value="98106">
+                    <option value="98107">
+                    <option value="98108">
+                    <option value="98109">
+                    <option value="98112">
+                    <option value="98115">
+                    <option value="98116">
+                    <option value="98117">
+                    <option value="98118">
+                    <option value="98119">
+                    <option value="98122">
+                    <option value="98125">
+                    <option value="98126">
+                    <option value="98133">
+                    <option value="98136">
+                    <option value="98144">
+                    <option value="98146">
+                    <option value="98148">
+                    <option value="98155">
+                    <option value="98166">
+                    <option value="98168">
+                    <option value="98177">
+                    <option value="98178">
+                    <option value="98188">
+                    <option value="98198">
+                    <option value="98199">   
+                </datalist>
+                <br>
+                <label for="area">Total Area (Sqft):</label>
+                <input type="number" id="area" value="1000" required>
+                <br>
+                <label for="above">Above Area (Sqft)</label>
+                <input type="number" id="above" value="1000" required>
+                <br>
+                <label for="base">Basement Area (Sqft)</label>
+                <input type="number" id="basement" value="0" required>
+                <br>
+                <label for="built">Year Built:</label>
+                <input type="number" id="built" value="2000" required>
+                <br>
+                <label for="renovated">Year Renovated (same as year built if never renovated):</label>
+                <input type="number" id="renovated" value="2000" required>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Details</legend>
+                <label for="beds">Number of Bedrooms:</label>
+                <input type="number" id="beds" value="1" required>
+                <br>
+                <label for="baths">Number of Bathrooms:</label>
+                <input type="number" id="baths" value="1" required>
+                <br>
+                <label for="floors">Number of Floors:</label>
+                <input type="number" id="floors" value="1" required>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Price Prediction:</legend>
+                <div id="result">
+                </div>
+            </fieldset>
+            <button class="submit" type="button" onclick="submitInfo()" >Submit</button>
+            <input type="reset" value="Reset">
+        </form>
+       
+            
+        
+    </body>
+</html>
